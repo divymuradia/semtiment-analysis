@@ -17,6 +17,10 @@ def home():
 @app.route('/aboutusnew')
 def aboutusnew():
     return render_template('aboutusnew.html')
+#------------------------------modal-------------------------------------------
+@app.route('/modal')
+def modal():
+    return render_template('modal.html')
   
 @app.route('/predict',methods=['GET'])
 def predict():
